@@ -1,0 +1,91 @@
+|--- residence_age <= 11.50
+|   |--- residence_age <= 4.50
+|   |   |--- frequency_64 <= 1.50
+|   |   |   |--- residence_age <= 1.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- residence_age >  1.50
+|   |   |   |   |--- residence_age <= 3.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- residence_age >  3.50
+|   |   |   |   |   |--- class: 1
+|   |   |--- frequency_64 >  1.50
+|   |   |   |--- recency <= 2.50
+|   |   |   |   |--- recency <= 1.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- recency >  1.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- recency >  2.50
+|   |   |   |   |--- residence_age <= 3.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- residence_age >  3.50
+|   |   |   |   |   |--- class: 1
+|   |--- residence_age >  4.50
+|   |   |--- frequency_64 <= 1.50
+|   |   |   |--- recency <= 8.50
+|   |   |   |   |--- recency <= 5.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- recency >  5.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- recency >  8.50
+|   |   |   |   |--- residence_age <= 10.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- residence_age >  10.50
+|   |   |   |   |   |--- class: 1
+|   |   |--- frequency_64 >  1.50
+|   |   |   |--- recency <= 3.50
+|   |   |   |   |--- recency <= 1.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- recency >  1.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- recency >  3.50
+|   |   |   |   |--- recency <= 6.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- recency >  6.50
+|   |   |   |   |   |--- class: 0
+|--- residence_age >  11.50
+|   |--- recency <= 7.50
+|   |   |--- frequency_64 <= 6.50
+|   |   |   |--- recency <= 2.50
+|   |   |   |   |--- residence_age <= 147.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- residence_age >  147.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- recency >  2.50
+|   |   |   |   |--- residence_age <= 319.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- residence_age >  319.50
+|   |   |   |   |   |--- class: 0
+|   |   |--- frequency_64 >  6.50
+|   |   |   |--- residence_age <= 256.50
+|   |   |   |   |--- residence_age <= 71.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- residence_age >  71.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- residence_age >  256.50
+|   |   |   |   |--- residence_age <= 966.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- residence_age >  966.50
+|   |   |   |   |   |--- class: 0
+|   |--- recency >  7.50
+|   |   |--- residence_age <= 21.50
+|   |   |   |--- frequency_64 <= 1.50
+|   |   |   |   |--- residence_age <= 17.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- residence_age >  17.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- frequency_64 >  1.50
+|   |   |   |   |--- recency <= 8.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- recency >  8.50
+|   |   |   |   |   |--- class: 0
+|   |   |--- residence_age >  21.50
+|   |   |   |--- recency <= 28.50
+|   |   |   |   |--- residence_age <= 178.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- residence_age >  178.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- recency >  28.50
+|   |   |   |   |--- residence_age <= 39.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- residence_age >  39.50
+|   |   |   |   |   |--- class: 0
